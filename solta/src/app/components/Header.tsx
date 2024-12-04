@@ -12,11 +12,11 @@ export default function Header() {
       </h1>
       <select
         value={language}
-        onChange={(e) => setLanguage(e.target.value as 'en' | 'rs')}
+        onChange={(e) => setLanguage(e.target.value as 'en' | 'sr')}
         className="p-2 border rounded"
       >
         <option value="en">English</option>
-        <option value="rs">Serbian</option>
+        <option value="sr">Serbian</option>
       </select>
     </header>
   )
