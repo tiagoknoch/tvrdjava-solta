@@ -1,12 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { LanguageProvider } from './LanguageContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Map Website',
-  description: 'A website displaying a large map',
+  title: 'Interactive Map',
+  description: 'An interactive map with audio descriptions',
 }
 
 export default function RootLayout({
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <LanguageProvider>
+        <body className={inter.className}>{children}</body>
+      </LanguageProvider>
     </html>
   )
 }

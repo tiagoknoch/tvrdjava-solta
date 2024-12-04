@@ -4,11 +4,14 @@ import { useState, useRef } from 'react'
 import Image from 'next/image'
 import { mapIcons, MapIcon } from './mapData'
 import { Play, Pause } from 'lucide-react'
+import { useLanguage } from './LanguageContext'
+import Header from './components/Header'
 
 export default function Home() {
   const [activeIcon, setActiveIcon] = useState<MapIcon | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const { language } = useLanguage()
 
   const handleIconClick = (icon: MapIcon) => {
     setActiveIcon(icon)
@@ -32,6 +35,7 @@ export default function Home() {
 
   return (
     <main className="relative w-full h-screen">
+      <Header />
       <Image
         src="/map.jpg"
         alt="Interactive map"
@@ -49,8 +53,8 @@ export default function Home() {
       ))}
       {activeIcon && (
         <div className="absolute inset-x-0 bottom-0 p-4 bg-white bg-opacity-90">
-          <h2 className="text-xl font-bold mb-2">{activeIcon.title}</h2>
-          <p className="mb-4">{activeIcon.description}</p>
+          <h2 className="text-xl font-bold mb-2">{activeIcon.title[language]}</h2>
+          <p className="mb-4">{activeIcon.description[language]}</p>
           <button
             className="flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full"
             onClick={handleAudioToggle}
@@ -59,7 +63,7 @@ export default function Home() {
           </button>
           <audio
             ref={audioRef}
-            src={activeIcon.audioSrc}
+            src={`/audio/${activeIcon.audioSrc}.${language}.m4a`}
             onEnded={() => setIsPlaying(false)}
           />
         </div>
