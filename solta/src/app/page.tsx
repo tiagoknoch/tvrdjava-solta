@@ -2,18 +2,19 @@
 
 import { useState, useRef } from 'react'
 import Image from 'next/image'
-import { mapIcons, MapIcon } from './mapData'
+import { mapIcons, MapIcon as MapIconType } from './mapData'
 import { Play, Pause } from 'lucide-react'
 import { useLanguage } from './LanguageContext'
 import Header from './components/Header'
+import MapIcon from './components/MapIcon'
 
 export default function Home() {
-  const [activeIcon, setActiveIcon] = useState<MapIcon | null>(null)
+  const [activeIcon, setActiveIcon] = useState<MapIconType | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const { language } = useLanguage()
 
-  const handleIconClick = (icon: MapIcon) => {
+  const handleIconClick = (icon: MapIconType) => {
     setActiveIcon(icon)
     setIsPlaying(false)
     if (audioRef.current) {
@@ -46,10 +47,16 @@ export default function Home() {
       {mapIcons.map((icon) => (
         <button
           key={icon.id}
-          className="absolute w-8 h-8 bg-red-500 rounded-full"
+          className="absolute transform -translate-x-1/2 -translate-y-1/2"
           style={{ left: `${icon.x}%`, top: `${icon.y}%` }}
           onClick={() => handleIconClick(icon)}
-        />
+        >
+          <MapIcon
+            color={icon.iconColor}
+            type={icon.iconType}
+            content={icon.iconContent}
+          />
+        </button>
       ))}
       {activeIcon && (
         <div className="absolute inset-x-0 bottom-0 p-4 bg-white bg-opacity-90">

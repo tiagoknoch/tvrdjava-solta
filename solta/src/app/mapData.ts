@@ -13,6 +13,15 @@ export interface MapIcon {
     sr: string;
   };
   audioSrc: string;
+  iconColor: string;
+  iconType: 'star' | 'house' | 'number';
+  iconContent?: string | number;
 }
 
-export const mapIcons: MapIcon[] = mapIconsData;
+const mapIconsWithTailwindColors: MapIcon[] = mapIconsData.map(icon => ({
+  ...icon,
+  iconColor: `bg-${icon.iconColor}-500 hover:bg-${icon.iconColor}-600`
+}));
+
+export const mapIcons: MapIcon[] = mapIconsWithTailwindColors;
+
