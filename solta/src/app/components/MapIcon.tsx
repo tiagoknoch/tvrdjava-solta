@@ -7,7 +7,7 @@ interface MapIconProps {
 }
 
 export default function MapIcon({ color, type, content }: MapIconProps) {
-  const iconClass = `w-8 h-8 flex items-center justify-center rounded-full text-white ${color}`
+  const iconClass = `w-8 h-8 flex items-center justify-center rounded-full text-white animate-pulse ${color}`
 
   return (
     <div className={iconClass}>
