@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { mapIcons, MapIcon as MapIconType } from './mapData'
 import { Play, Pause } from 'lucide-react'
 import { useLanguage } from './LanguageContext'
-import Header from './components/Header'
 import MapIcon from './components/MapIcon'
 
 export default function Home() {
@@ -35,8 +34,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative w-full h-screen">
-      <Header />
+    <main className="relative w-full min-h-screen pt-20">
       <Image
         src="/map.jpg"
         alt="Interactive map"
