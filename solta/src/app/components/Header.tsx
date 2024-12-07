@@ -23,8 +23,8 @@ export default function Header() {
           onChange={(e) => setLanguage(e.target.value as 'en' | 'sr')}
           className="p-2 border rounded"
         >
-          <option value="en">English</option>
           <option value="sr">Serbian</option>
+          <option value="en">English</option>
         </select>
       </nav>
     </header>
