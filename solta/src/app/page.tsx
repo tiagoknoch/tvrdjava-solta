@@ -6,6 +6,7 @@ import { mapIcons, MapIcon as MapIconType } from './mapData'
 import { Play, Pause } from 'lucide-react'
 import { useLanguage } from './LanguageContext'
 import MapIcon from './components/MapIcon'
+import VideoPopup from './components/VideoPopup'
 
 export default function Home() {
   const [activeIcon, setActiveIcon] = useState<MapIconType | null>(null)
@@ -35,6 +36,7 @@ export default function Home() {
 
   return (
     <main className="relative w-full min-h-screen pt-20">
+      <VideoPopup />
       <Image
         src="/map.jpg"
         alt="Interactive map"

@@ -8,15 +8,15 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90 p-4 flex justify-between items-center shadow-md">
-      <h1 className="text-2xl font-bold">
-        {language === 'en' ? 'Interactive Map' : 'Interaktivna Mapa'}
+      <h1 className="text-xl font-bold">
+        {language === 'sr' ? 'Putevima antičkih civilizacija' : 'Paths of Ancient Civilizations'}
       </h1>
       <nav className="flex items-center space-x-4">
         <Link href="/" className="text-blue-600 hover:text-blue-800">
-          {language === 'en' ? 'Home' : 'Početna'}
+          {language === 'sr' ? 'Početna' : 'Home'}
         </Link>
         <Link href="/about" className="text-blue-600 hover:text-blue-800">
-          {language === 'en' ? 'About Us' : 'O nama'}
+          {language === 'sr' ? 'O nama' : 'About Us'}
         </Link>
         <select
           value={language}
