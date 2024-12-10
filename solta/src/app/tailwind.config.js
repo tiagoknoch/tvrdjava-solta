@@ -12,6 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   plugins: [],
@@ -19,9 +22,12 @@ module.exports = {
     'bg-red-500',
     'bg-blue-500',
     'bg-orange-500',
+    'bg-green-500',
     'hover:bg-red-600',
     'hover:bg-blue-600',
     'hover:bg-orange-600',
+    'hover:bg-green-600',
+    'animate-pulse-slow',
   ]
 }
 

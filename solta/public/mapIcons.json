@@ -34,6 +34,39 @@
   {
     "id": "3",
     "x": 40,
+    "y": 70,
+    "title": {
+      "en": "Teuta's Fortress",
+      "sr": "Teutina Utvrda"
+    },
+    "description": {
+      "sr": "Teuta je bila ilirska kraljica koja je vladala od 231.godine p.n.e. do 228.godine p.n.e.Vladala je kao regent umesto svog maloletnog posinka Pinesa nakon smrti njenog muža Agrona. Teuta je vladala iz Skadra, a kraljevstvo se prostiralo od reke Neretve na severu do reke Aous u Albaniji, na jugu. Tema Ilira i dana danas intrigira naučnike. Iako okupiran od Rimljana, taj nareod nije mogao u potpunosti nestati. Nakon što je potpisala mirovni ugovor sa Rimljanima, Teuta je nestala sa scene i o njenoj daljoj sudbini se ništa ne zna. Brojne legende postoje o njoj na prostoru Dalmacije. Kada su Rimljani osvojili Risinium, Teuta se sa svojim ljudima i blagom povukla u utvrđenje iznad i mesecima odolevala. Kad je videla da će tvrđava biti osvojena, bacila se niz vodopad podzemne reke, a rimski vojnici nisu našli nikakvo blago. Stanovnici Šolte znaju za Teutine dvore, na brdu iznad uvale Senjska, gde su ribari imali običaj da bacaju deo ulova na sve četiri strane sveta da bi pobili Teutinu naklonost i da bi im dozovlila da i dalje love ribu. Legenda kaže da čak i sada, kad se ribar nađe u nevolji, on doziva Teutu u pomoć. Od Teutinog dvorca ostale su samo ruševine i teško mu je prići. Kažu i da se Teuta neko vreme skrivala od rimske mornarice u šoltanskoj uvali Tatinji. U novije vreme Šoltani svoje ostrvo nazivaju ostrvom kraljice Teute.",
+      "en": "Teuta was an Ilirian queen that ruled from 231 B.C. until 228 B.C. She ruled as a regent for her stepson Pines who was a minor at that time, after the death of her husband Agron. She ruled from Skadar, and the kingdom included the area between the Neretva river on the north, and the Aous river in Albania, on the south. The topic of Illyrians still fascinates the scientists. Even though they were occupied by the Romans, they couldn't have just disappeared. After she signed the truce with the Romans, Teuta disappeared from the world scene and her further fate is not known. Numerous legends exist about her in Dalmatia. When the Romans won Risinium, Teuta went into the fortress with her people and her treasure and didn't give up for months. When she saw the fortress was going to be lost, she threw herself off the waterfall of an underground river, and the Roman soldiers found no treasure. The inhabitants of Sholta are familiar with Teuta's castle, on a hill under the Senjska bay, where the fishermen used to throw a piece of the catch to all four parts of the world, so that they could get the mercy of the queen and her permission to continue fishing. The legend says that even today, if the fisherman is in trouble, he would call Teuta for help. All that is left of this castle are ruins and it is difficult to approach it. They also say that Teuta would hide for a while from the Roman navy in the Sholtan bay called Tatinja. In the modern days, people from Sholta consider their island to be the island of the queen Teuta."
+    },
+    "audioSrc": "teuta",
+    "iconColor": "orange",
+    "iconType": "star"
+  },
+  {
+    "id": "4",
+    "x": 80,
+    "y": 40,
+    "title": {
+      "en": "Zadar",
+      "sr": "Zadar"
+    },
+    "description": {
+      "sr": "Zadar je peti grad po broju stanovnika u Hrvatskoj i administrativno sedište Zadarske županije. U 9.veku pre nove ere ilirsko pleme Liburni nastanilo je Zadar, da bi osam vekova kasnije Zadar postao rimska kolonija. Nakon pada Zapadnog rimskog carstva i razaranja antičke Salone, Zadar postaje glavni grad vizantijske provincije Dalmacije. Arheološki muzej u Zadru čuva preko 100 000 artefakta iz svih perioda od praistorije do 11.veka, a ti predmeti su podeljeni u nekoliko odeljaka: praistorija, antika, srednjovekovna arheologija, odeljak za novi vek, odeljak za pomorska arheološka istraživanja, konzervatorsko-restauratorski odeljak. Posebna delatnost Arheološkog muzeja u Zadru odnosi se na proizvodnju arheoloških kopija i reprodukcija od keramike, gipsa, stakla i kamena. Kao jedna od najvažnijih građevina u Zadru, ističe se Crkva Svetog Donata, koja se nalazi na ostacima antičkog foruma. Sagrađena je oko 9.veka a nosi ime po biskupu Donatu, koji je naredio njenu izgradnju. Morske orgulje u Zadru su originalni spoj arhitekture i muzike. U pitanju je arhitektonski instrument koji je otvoren 2005.godine na zadarskoj Rivi, a čiji se zvuk stvara pomoću mora, talasa, plime i oseke. Pozdrav Suncu je arhitektonska instalacija koja se sastoji od 300 solarnih panela koji su poređani u krug prečnika 22 metra. Solarne ploče u toku dana apsorbuju sunčevu svetlost, dok se uveče pale rasvetni elementi. Osim Sunca, prikazane su i planete Sunčevog sistema.",
+      "en": "Zadar is the fifth most populated city in Croatia and the administrative centre of Zadar county. In the 9th century B.C. the Ilirian tribe Liburns settled in Zadar, and eight centuries later Zadar became a Roman colony. After the fall of the Western Roman empire and the destruction of ancient Salona, Zadar became the capital of Byzanthine province of Dalmatia. The archaelogical museum in Zadar preserves over 100 000 artefacts from all periods since prehistory until 11th century, and these objects are divided into several sections: prehistory, antiquity, medieval archaelogy, a section for the new century, a section for underwater archaelogical research, a conservation-restoration section. A speacial activity of the Archaelogical museum in Zadar relates to the production of copies and reproductions made of ceramics, plaster, glass and stone. As one of the most important buildings in Zadar, the church of Saint Donat stands out, which is located on the remains of an ancient forum. It was built around 9th century and it is named after bishop Donat who ordered its construction. The sea organ in Zadar is an original combination of architecture and music. It is an architectural instrument that was opened in 2005 on the Zarad waterfront, and its sound is made by the sea, waves and tides. Salutation to the Sun is an architectural installation consisting of 300 solar panels arranged in a circle with the diameter of 22 metres. The solar panels absorb the sunlight during the day while lightning elements are turned on in the evening. Apart from the Sun, the planets of the Solar system are also shown."
+    },
+    "audioSrc": "zadar",
+    "iconColor": "green",
+    "iconType": "star"
+  },
+
+  {
+    "id": "5",
+    "x": 40,
     "y": 20,
     "title": {
       "en": "Diocletian’s pond",
