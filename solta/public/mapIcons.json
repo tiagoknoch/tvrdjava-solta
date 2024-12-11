@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "x": 20,
-    "y": 30,
+    "x": 60,
+    "y": 25,
     "title": {
       "en": "Villa rusticae",
       "sr": "Vile Rustike"
@@ -17,8 +17,8 @@
   },
   {
     "id": "2",
-    "x": 60,
-    "y": 50,
+    "x": 80,
+    "y": 65,
     "title": {
       "en": "Starine",
       "sr": "Starine"
@@ -33,8 +33,8 @@
   },
   {
     "id": "3",
-    "x": 40,
-    "y": 70,
+    "x": 60,
+    "y": 50,
     "title": {
       "en": "Teuta's Fortress",
       "sr": "Teutina Utvrda"
@@ -49,8 +49,8 @@
   },
   {
     "id": "4",
-    "x": 80,
-    "y": 40,
+    "x": 50,
+    "y": 10,
     "title": {
       "en": "Zadar",
       "sr": "Zadar"
@@ -66,8 +66,8 @@
 
   {
     "id": "5",
-    "x": 40,
-    "y": 20,
+    "x": 68,
+    "y": 40,
     "title": {
       "en": "Diocletian’s pond",
       "sr": "Dioklecijanov ribnjak"
