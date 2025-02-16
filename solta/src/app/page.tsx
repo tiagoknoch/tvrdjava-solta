@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { useState, useRef } from 'react'
-import Image from 'next/image'
-import { mapIcons, MapIcon as MapIconType } from './mapData'
-import { Play, Pause } from 'lucide-react'
-import { useLanguage } from './LanguageContext'
-import MapIcon from './components/MapIcon'
-import VideoPopup from './components/VideoPopup'
+import { useState, useRef } from "react"
+import Image from "next/image"
+import { mapIcons, type MapIcon as MapIconType } from "./mapData"
+import { Play, Pause } from "lucide-react"
+import { useLanguage } from "./LanguageContext"
+import MapIcon from "./components/MapIcon"
+import VideoPopup from "./components/VideoPopup"
 
 export default function Home() {
   const [activeIcon, setActiveIcon] = useState<MapIconType | null>(null)
@@ -37,13 +37,7 @@ export default function Home() {
   return (
     <main className="relative w-full min-h-screen pt-20">
       <VideoPopup />
-      <Image
-        src="/map.jpg"
-        alt="Interactive map"
-        fill
-        style={{ objectFit: 'cover' }}
-        priority
-      />
+      <Image src="/map.jpg" alt="Interactive map" fill style={{ objectFit: "cover" }} priority />
       {mapIcons.map((icon) => (
         <button
           key={icon.id}
@@ -51,11 +45,7 @@ export default function Home() {
           style={{ left: `${icon.x}%`, top: `${icon.y}%` }}
           onClick={() => handleIconClick(icon)}
         >
-          <MapIcon
-            color={icon.iconColor}
-            type={icon.iconType}
-            content={icon.iconContent}
-          />
+          <MapIcon color={icon.iconColor} type={icon.iconType} content={icon.iconContent} />
         </button>
       ))}
       {activeIcon && (
