@@ -45,7 +45,8 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     localStorage.setItem("language", lang)
 
     // Update the URL to reflect the new language
-    const newPathname = "/" + lang + (pathname === "/" ? "" : pathname.substring(pathname.indexOf("/", 1)))
+    const segments = pathname.split("/").filter(Boolean)
+    const newPathname = "/" + lang + (segments.length > 1 ? "/" + segments.slice(1).join("/") : "")
     router.push(newPathname)
   }
 
