@@ -1,6 +1,6 @@
 "use client"
 
-import { useLanguage } from "../LanguageContext"
+import { useLanguage } from "../../LanguageContext"
 
 export default function AboutPage() {
   const { language } = useLanguage()

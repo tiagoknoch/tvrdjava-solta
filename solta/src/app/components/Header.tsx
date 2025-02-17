@@ -22,10 +22,10 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90 p-4 flex justify-between items-center shadow-md">
       <h1 className="text-xl font-bold">{titles[language]}</h1>
       <nav className="flex items-center space-x-4">
-        <Link href="/" className="text-blue-600 hover:text-blue-800">
+        <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
           {navItems[language].home}
         </Link>
-        <Link href="/about" className="text-blue-600 hover:text-blue-800">
+        <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
           {navItems[language].about}
         </Link>
         <select

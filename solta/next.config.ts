@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ["en", "sr", "hr"],
-    defaultLocale: "sr",
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/sr",
+        permanent: false,
+      },
+    ]
   },
 }
 

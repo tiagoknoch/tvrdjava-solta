@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { createContext, useState, useContext, type ReactNode, useEffect } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 
 type Language = "en" | "sr" | "hr"
 
@@ -15,6 +15,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const router = useRouter()
+  const pathname = usePathname()
   const [language, setLanguageState] = useState<Language>("sr")
 
   useEffect(() => {
@@ -25,12 +26,27 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       setLanguageState("sr")
       localStorage.setItem("language", "sr")
     }
-  }, [])
+
+    // Check if the current path starts with a valid language code
+    const pathLang = pathname.split("/")[1] as Language
+    if (["en", "sr", "hr"].includes(pathLang)) {
+      if (pathLang !== language) {
+        setLanguageState(pathLang)
+        localStorage.setItem("language", pathLang)
+      }
+    } else if (pathname !== "/") {
+      // If no valid language in URL and not at root, redirect to /sr
+      router.push(`/sr${pathname}`)
+    }
+  }, [pathname, language, router])
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
     localStorage.setItem("language", lang)
-    router.refresh()
+
+    // Update the URL to reflect the new language
+    const newPathname = "/" + lang + (pathname === "/" ? "" : pathname.substring(pathname.indexOf("/", 1)))
+    router.push(newPathname)
   }
 
   return <LanguageContext.Provider value={{ language, setLanguage }}>{children}</LanguageContext.Provider>
