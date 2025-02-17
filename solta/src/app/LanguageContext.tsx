@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { createContext, useState, useContext, type ReactNode, useEffect } from "react"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter } from "next/navigation"
 
 type Language = "en" | "sr" | "hr"
 
@@ -15,7 +15,6 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const router = useRouter()
-  const pathname = usePathname()
   const [language, setLanguageState] = useState<Language>("sr")
 
   useEffect(() => {
