@@ -27,7 +27,7 @@ export default function Slideshow({ topics }: SlideshowProps) {
                         await fetch(imagePath)
                         return imagePath
                     } catch (error) {
-                        console.error(`Failed to load image: ${imagePath}`)
+                        console.error(`Failed to load image: ${imagePath}`, error)
                         return null
                     }
                 }),
