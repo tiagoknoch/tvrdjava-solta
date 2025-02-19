@@ -1,24 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
- images: {
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-      },
-      {
-        protocol: "https",
-        hostname: "localhost",
-      },
-       {
-        protocol: "http",
-        hostname: "tvrdjava-solta.vercel.app",
-      },
-      {
-        protocol: "https",
-        hostname: "tvrdjava-solta.vercel.app",
-      },
-    ],
+  images: {
+    unoptimized: true, // This allows serving static images from the public directory
   },
   async redirects() {
     return [

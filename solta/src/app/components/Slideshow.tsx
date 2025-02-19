@@ -16,35 +16,30 @@ export default function Slideshow({ topics }: SlideshowProps) {
     const [currentTopic, setCurrentTopic] = useState<Topic>(topics[0])
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [images, setImages] = useState<string[]>([])
+    const [imageError, setImageError] = useState(false)
 
     useEffect(() => {
-        const loadImages = async () => {
-            const newImages = await Promise.all(
-                Array.from({ length: currentTopic.imageCount }, async (_, i) => {
-                    const imagePath = `/images/${currentTopic.name}/${i + 1}.jpg`
-                    try {
-                        // This will throw an error if the image doesn't exist
-                        await fetch(imagePath)
-                        return imagePath
-                    } catch (error) {
-                        console.error(`Failed to load image: ${imagePath}`, error)
-                        return null
-                    }
-                }),
-            )
-            setImages(newImages.filter((img): img is string => img !== null))
-        }
-
-        loadImages()
+        const newImages = Array.from(
+            { length: currentTopic.imageCount },
+            (_, i) => `/images/${currentTopic.name}/${i + 1}.jpg`,
+        )
+        setImages(newImages)
         setCurrentImageIndex(0)
+        setImageError(false)
     }, [currentTopic])
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+        setImageError(false)
     }
 
     const prevImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+        setImageError(false)
+    }
+
+    const handleImageError = () => {
+        setImageError(true)
     }
 
     return (
@@ -70,12 +65,14 @@ export default function Slideshow({ topics }: SlideshowProps) {
                 {images.length > 0 && (
                     <div className="relative w-full h-[400px]">
                         <Image
-                            src={images[currentImageIndex] || "/placeholder.svg"}
+                            src={imageError ? "/placeholder.svg" : images[currentImageIndex]}
                             alt={`${currentTopic.name} - Image ${currentImageIndex + 1}`}
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             style={{ objectFit: "cover" }}
                             className="rounded-lg"
+                            onError={handleImageError}
+                            priority={currentImageIndex === 0}
                         />
                     </div>
                 )}
