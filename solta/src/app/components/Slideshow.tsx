@@ -21,7 +21,7 @@ export default function Slideshow({ topics }: SlideshowProps) {
     useEffect(() => {
         const newImages = Array.from(
             { length: currentTopic.imageCount },
-            (_, i) => `/images/${currentTopic.name}/${i + 1}.jpg`,
+            (_, i) => `/images/${currentTopic.name}/${i + 1}.JPG`,
         )
         setImages(newImages)
         setCurrentImageIndex(0)
