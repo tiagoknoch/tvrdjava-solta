@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "localhost",
       },
+       {
+        protocol: "http",
+        hostname: "tvrdjava-solta.vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "tvrdjava-solta.vercel.app",
+      },
     ],
   },
   async redirects() {
