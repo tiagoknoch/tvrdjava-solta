@@ -35,8 +35,9 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
         localStorage.setItem("language", pathLang)
       }
     } else if (pathname !== "/") {
-      // If no valid language in URL and not at root, redirect to /sr
-      router.push(`/sr${pathname}`)
+      // If no valid language in URL and not at root, redirect to the stored language or default to 'sr'
+      const redirectLang = storedLanguage || "sr"
+      router.push(`/${redirectLang}${pathname}`)
     }
   }, [pathname, language, router])
 
