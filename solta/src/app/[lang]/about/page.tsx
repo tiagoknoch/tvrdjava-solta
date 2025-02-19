@@ -9,23 +9,23 @@ export default function AboutPage() {
     en: {
       title: "About Us",
       paragraph1:
-        "Welcome to our interactive map project. We are dedicated to showcasing the beautiful locations and rich history of our region.",
+        "Welcome to the site dedicated to the ERASMUS+ KA2 project \"Following the paths of Ancient Civilizations\". Within the framework of the project, joint cooperation was achieved by Primary School \"Grohote\" from Šolta in the Republic of Croatia and Primary School \"Tvrđava\" from Petrovaradin in the Republic of Serbia.",
       paragraph2:
-        "Our team of local historians and tech enthusiasts have come together to create this unique experience for visitors and locals alike.",
+        " Our goal was to visit sites within our two states where the remains of Ancient Rome are located. In front of you is a digital guide of those locations, information about the places we visited, as well as impressions of our cooperation. We hope you enjoy!",
     },
     sr: {
-      title: "O nama",
+      title: "O Nama",
       paragraph1:
-        "Dobrodošli na naš projekat interaktivne mape. Posvećeni smo prikazivanju prelepih lokacija i bogate istorije našeg regiona.",
+        "Dobrodošli na sajt posvećen ERASMUS+ KA2 projektu \"Putevima antičkih civilizacija\". U okviru projekta, zajedničku saradnju ostvarile su OŠ \"Grohote\" sa Šolte iz Republike Hrvatske i POŠ \"Tvrđava\" iz Petrovaradinu u Republici Srbiji. ",
       paragraph2:
-        "Naš tim lokalnih istoričara i tehnoloških entuzijasta se udružio da stvori ovo jedinstveno iskustvo za posetioce i lokalno stanovništvo.",
+        "Naš cilj je bio da obiđemo lokacije u okviru naše dve države na kojima se nalaze ostaci Starog Rima. Pred vama je digitalni vodič tih lokacija, informacije o mestima koje smo posetili, kao i utisci o našoj saradnji. Nadamo se da ćete uživati!",
     },
     hr: {
-      title: "O nama",
+      title: "O Nama",
       paragraph1:
-        "Dobrodošli u naš projekt interaktivne karte. Posvećeni smo prikazivanju prekrasnih lokacija i bogate povijesti naše regije.",
+        "Dobrodošli na stranicu posvećenu ERASMUS+ KA2 projektu „Cestama drevnih civilizacija“. U okviru projekta zajedničku suradnju ostvarile su Osnovna škola „Grohote“ sa Šolte u Republici Hrvatskoj i Osnovna škola „Tvrđava“ iz Petrovaradina u Republici Srbiji. ",
       paragraph2:
-        "Naš tim lokalnih povjesničara i tehnoloških entuzijasta udružio se kako bi stvorio ovo jedinstveno iskustvo za posjetitelje i lokalno stanovništvo.",
+        "Cilj nam je bio posjetiti lokalitete unutar naše dvije zemlje gdje se nalaze ostaci starog Rima. Pred vama je digitalni vodič tih lokacija, podaci o mjestima koja smo posjetili, kao i dojmovi naše suradnje. Nadamo se da ćete uživati!",
     },
   }
 
