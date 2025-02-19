@@ -32,7 +32,7 @@
       "hr": "Tvrđava Starine, koja ima dvije kule, potječe iz antičkog doba. Nalazi se u podnožju Vele Straže (najviša točka otoka), u blizini Gornjeg Sela. U Gornjem Selu se nalaze i antički grobovi, kao i ostaci antičkog sarkofaga na groblju (lokacija Stomorja)."
     },
     "audioSrc": "starine",
-    "iconColor": "blue",
+    "iconColor": "orange",
     "iconType": "star"
   },
   {
@@ -42,7 +42,7 @@
     "title": {
       "en": "Teuta's Fortress",
       "sr": "Teutina Utvrda",
-      "hr": "Teutina tvrđava" 
+      "hr": "Teutina tvrđava"
     },
     "description": {
       "sr": "Teuta je bila ilirska kraljica koja je vladala od 231.godine p.n.e. do 228.godine p.n.e.Vladala je kao regent umesto svog maloletnog posinka Pinesa nakon smrti njenog muža Agrona. Teuta je vladala iz Skadra, a kraljevstvo se prostiralo od reke Neretve na severu do reke Aous u Albaniji, na jugu. Tema Ilira i dana danas intrigira naučnike. Iako okupiran od Rimljana, taj nareod nije mogao u potpunosti nestati. Nakon što je potpisala mirovni ugovor sa Rimljanima, Teuta je nestala sa scene i o njenoj daljoj sudbini se ništa ne zna. Brojne legende postoje o njoj na prostoru Dalmacije. Kada su Rimljani osvojili Risinium, Teuta se sa svojim ljudima i blagom povukla u utvrđenje iznad i mesecima odolevala. Kad je videla da će tvrđava biti osvojena, bacila se niz vodopad podzemne reke, a rimski vojnici nisu našli nikakvo blago. Stanovnici Šolte znaju za Teutine dvore, na brdu iznad uvale Senjska, gde su ribari imali običaj da bacaju deo ulova na sve četiri strane sveta da bi pobili Teutinu naklonost i da bi im dozovlila da i dalje love ribu. Legenda kaže da čak i sada, kad se ribar nađe u nevolji, on doziva Teutu u pomoć. Od Teutinog dvorca ostale su samo ruševine i teško mu je prići. Kažu i da se Teuta neko vreme skrivala od rimske mornarice u šoltanskoj uvali Tatinji. U novije vreme Šoltani svoje ostrvo nazivaju ostrvom kraljice Teute.",
@@ -68,10 +68,9 @@
       "hr": "Zadar je peti grad po broju stanovnika u Hrvatskoj i administrativno središte Zadarske županije. U 9. stoljeću p.n.e. u Zadar se doseljava ilirsko pleme Liburna, a osam stoljeća kasnije Zadar postaje rimska kolonija. Nakon pada Zapadnog Rimskog Carstva i razaranja antičke Salone, Zadar je postao glavnim gradom bizantske provincije Dalmacije. Arheološki muzej u Zadru čuva preko 100 000 artefakata iz svih razdoblja od prapovijesti do 11. stoljeća, a ti su predmeti podijeljeni u nekoliko odjela: prapovijest, antika, srednjovjekovna arheologija, odjel za novi vijek, odjel za podmorska arheološka istraživanja, konzervatorsko-restauratorski odsjek. Posebna djelatnost Arheološkog muzeja u Zadru odnosi se na izradu kopija i reprodukcija od keramike, gipsa, stakla i kamena. Kao jedna od najznačajnijih građevina u Zadru ističe se crkva Svetog Donata koja se nalazi na ostacima antičkog foruma. Sagrađena je oko 9. stoljeća, a ime je dobila po biskupu Donatu koji je naredio njezinu izgradnju. Morske orgulje u Zadru originalan su spoj arhitekture i glazbe. Riječ je o arhitektonskom instrumentu koji je otvoren 2005. godine na zaradskoj rivi, a njegov zvuk stvaraju more, valovi i plima. Pozdrav Suncu je arhitektonska instalacija koja se sastoji od 300 solarnih panela raspoređenih u krug promjera 22 metra. Solarni paneli apsorbiraju sunčevu svjetlost tijekom dana, dok se rasvjetni elementi pale navečer. Osim Sunca, prikazani su i planeti Sunčevog sustava."
     },
     "audioSrc": "zadar",
-    "iconColor": "green",
+    "iconColor": "orange",
     "iconType": "star"
   },
-
   {
     "id": "5",
     "x": 68,
@@ -88,8 +87,63 @@
     },
     "audioSrc": "diocletian_palace",
     "iconColor": "orange",
+    "iconType": "star"
+  },
+  {
+    "id": "6",
+    "x": 90,
+    "y": 15,
+    "title": {
+      "en": "Felix Romuliana",
+      "sr": "Feliks Romuliana",
+      "hr": "Felix Romuliana"
+    },
+    "description": {
+      "en": "Gamzigrad is an archaeological site near Zaječar in eastern Serbia of the ancient Roman imperial palace Felix Romuliana, which has been on the UNESCO World Heritage List since June 29, 2007. Gamzigrad is the residence of the Roman Emperor Gaius Valerius Maximianus Galerius, Diocletian's son-in-law. He named him Romuliana after his mother Romula. The palace seems to have never been completed, and the emperors of the 4th century left the property to the Christian church. During the 5th century the palace was destroyed by barbarians, and in the 6th century Justinian rebuilt it in the form of a fortress. After the invasion of the Slavs at the end of the 6th century, the former imperial residence was abandoned. Inside there was a palace, two pagan temples, three Christian churches and other buildings.",
+      "sr": "Gamzigrad je arheološko nalazište blizu Zaječara u instočnoj Srbiji antičke rimske carske palate Feliks Romulijane koje se od 29.juna 2007.nalazi na UNESKO-voj listi svetske baštine. Gamzigrad predstavlja rezidenciju rimskog cara Gaja Valerija Maksimijana Galerija, Dioklecijanovog zeta. Po majci Romuli nazvao ga je Romulijana. Palata izgleda nikada nije dovršena, a carevi 4.veka su posed prepustili hrišćanskoj crkvi. Tokom 5.veka palata je razarana od strane varvara, a u 6.veku Justinijan ju je obnovio u vidu tvrđave. Nakon najezde Slovena krajem 6.veka, nekadašnja carska rezidencija je napuštena. Unutra se nalazila palata, dva paganska hrama, tri hrišćanske crkve i druge građevine. ",
+      "hr": "Gamzigrad je arheološko nalazište u blizini Zaječara u istočnoj Srbiji starorimske carske palače Felix Romuliana, koja je na UNESCO-vom popisu svjetske baštine od 29. lipnja 2007. godine. Gamzigrad je rezidencija rimskog cara Gaja Valerija Maksimijana Galerija, Dioklecijanovog zeta. Nazvao ga je Romuliana po njegovoj majci Romuli. Čini se da palača nikada nije dovršena, a carevi 4. stoljeća posjed su prepustili kršćanskoj crkvi. Tijekom 5. stoljeća palaču su uništili barbari, au 6. stoljeću Justinijan ju je obnovio u obliku utvrde. Nakon prodora Slavena krajem 6. stoljeća nekadašnja carska rezidencija je napuštena. U njoj se nalazila palača, dva poganska hrama, tri kršćanske crkve i druge građevine."
+    },
+    "audioSrc": "felix_romuliana",
+    "iconColor": "blue",
+    "iconType": "number",
+    "iconContent": 1
+  },
+  {
+    "id": "7",
+    "x": 90,
+    "y": 20,
+    "title": {
+      "en": "Viminacium",
+      "sr": "Viminacium",
+      "hr": "Viminacium"
+    },
+    "description": {
+      "en": "Viminacium is an archaeological site near Kostolac. It was one of the most important legion camps on the Danube. It dates from the 1st century AD. It was on the Roman Constantinople road. It was completely destroyed by the arrival of the Slavs in the 6th century. Today, the archaeological site covers 450 hectares. It has the largest number of unearthed graves of any Roman archaeological site. According to data from 2023, 16,000 graves were discovered. A million-year-old mammoth skeleton was discovered in June 2009. Over 4 meters tall and weighing 10 tons, it is one of 20 complete mammoth skeletons discovered so far. She was given the name Vika, and it is estimated that she was 60 years old when she died.",
+      "sr": "Viminacium je arheološko nalazište u blizini Kostolca. Bio je jedan od najznačajnijih legijskih logora na Dunavu. Datira iz 1.vera nove ere. Reži na rimskom Carigradskom drumu. Potpuno je uništen dolaskom Slovena u 6.veku. Danas arheološko nalazište obuhvata 450 hektara. Ima najveći broj otkrivenih grobova na bilo kom rimskom arheološkom nalazištu. Prema podacima iz 2023.godine otkriveno je 16 000 grobova. Skelet mamuta star milion godina otkriven je u junu 2009. godine. Visok preko 4 metra i ztežak 10 tona, jedan je od 20 do sada otkrivenih kompletnih skeleta mamuta. Dobila je ime Vika, a procenjuje se da je imala 60 godina kada je umrla.",
+      "hr": "Viminacijum je arheološko nalazište u blizini Kostolca. Bio je to jedan od najvažnijih legijskih logora na Dunavu. Potječe iz 1. stoljeća nove ere. Nalazio se na rimskoj carigradskoj cesti. Potpuno je uništen dolaskom Slavena u 6. stoljeću. Danas se arheološko nalazište prostire na 450 hektara. Ima najveći broj neotkopanih grobova od svih rimskih arheoloških nalazišta. Prema podacima iz 2023. godine otkriveno je 16.000 grobova. Milijun godina star kostur mamuta otkriven je u lipnju 2009. godine. Visok preko 4 metra i težak 10 tona, jedan je od 20 do sada otkrivenih cjelovitih kostura mamuta. Dobila je ime Vika, a procjenjuje se da je imala 60 godina kada je umrla."
+    },
+    "audioSrc": "viminacium",
+    "iconColor": "blue",
+    "iconType": "number",
+    "iconContent": 2
+  },
+  {
+    "id": "8",
+    "x": 90,
+    "y": 25,
+    "title": {
+      "en": "Zaječar National Museum",
+      "sr": "Narodni Muzej Zaječar",
+      "hr": ""
+    },
+    "description": {
+      "en": "It was founded in 1951. At the time of its establishment, the museum had ten objects from archaeology. Its full development began in 1953, when archaeological research began at the site of Felix Romuliana. Today, the collection of Felix Romiluiana contains about 3,000 items. What stands out are the part of the archivolt with the inscription Felix Romuliana, the head of the emperor Galerius and the hand with the globe, the head of Hercules, part of the white marble structure, the head of Jupiter, part of the white marble sculpture, the mosaic of Dionysus at the feast, and many other objects.",
+      "sr": "Osnovan je 1951. godine. Prilikom osnivanja muzej je imao desetak predmeta iz arheologije. Puni razvoj dobija od 1953.godine kada počinju arheološka istraživanja na nalazištu Feliks Romulijani. Danas zbirka Feliks Romilujana sadrži oko 3000 predmeta. Ono što se izdvaja su deo arhivolte sa natpisom Felix Romuliana, glava imperatora Galerija i šaka sa globom, glava Herkula, deo strukture od belog mermera, glava Jupitera, deo skulpture od belog mermera, mozaik Dionis na gozbi, i mnogi drugi predmeti.",
+      "hr": "Viminacijum je arheološko nalazište u blizini Kostolca. Bio je to jedan od najvažnijih legijskih logora na Dunavu. Potječe iz 1. stoljeća nove ere. Nalazio se na rimskoj carigradskoj cesti. Potpuno je uništen dolaskom Slavena u 6. stoljeću. Danas se arheološko nalazište prostire na 450 hektara. Ima najveći broj neotkopanih grobova od svih rimskih arheoloških nalazišta. Prema podacima iz 2023. godine otkriveno je 16.000 grobova. Milijun godina star kostur mamuta otkriven je u lipnju 2009. godine. Visok preko 4 metra i težak 10 tona, jedan je od 20 do sada otkrivenih cjelovitih kostura mamuta. Dobila je ime Vika, a procjenjuje se da je imala 60 godina kada je umrla."
+    },
+    "audioSrc": "zajecar",
+    "iconColor": "blue",
     "iconType": "number",
     "iconContent": 3
   }
 ]
-
