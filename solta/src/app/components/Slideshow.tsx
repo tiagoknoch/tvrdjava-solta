@@ -18,11 +18,24 @@ export default function Slideshow({ topics }: SlideshowProps) {
     const [images, setImages] = useState<string[]>([])
 
     useEffect(() => {
-        const newImages = Array.from(
-            { length: currentTopic.imageCount },
-            (_, i) => `/images/${currentTopic.name}/${i + 1}.jpg`,
-        )
-        setImages(newImages)
+        const loadImages = async () => {
+            const newImages = await Promise.all(
+                Array.from({ length: currentTopic.imageCount }, async (_, i) => {
+                    const imagePath = `/images/${currentTopic.name}/${i + 1}.jpg`
+                    try {
+                        // This will throw an error if the image doesn't exist
+                        await fetch(imagePath)
+                        return imagePath
+                    } catch (error) {
+                        console.error(`Failed to load image: ${imagePath}`)
+                        return null
+                    }
+                }),
+            )
+            setImages(newImages.filter((img): img is string => img !== null))
+        }
+
+        loadImages()
         setCurrentImageIndex(0)
     }, [currentTopic])
 
