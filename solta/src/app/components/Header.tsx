@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { useLanguage } from "../LanguageContext"
 import ReactCountryFlag from "react-country-flag"
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown } from "lucide-react"
 
 export default function Header() {
   const { language, setLanguage } = useLanguage()
@@ -49,7 +49,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90 p-4 flex justify-between items-center shadow-md">
-      <h1 className="text-xl font-bold">{titles[language]}</h1>
+      <Link href={`/${language}`} className="hover:opacity-80">
+        <h1 className="text-xl font-bold cursor-pointer">{titles[language]}</h1>
+      </Link>
       <nav className="flex items-center space-x-4">
         <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
           {navItems[language].home}
@@ -63,10 +65,10 @@ export default function Header() {
             className="flex items-center space-x-2 p-2 border rounded hover:bg-gray-100"
           >
             <ReactCountryFlag
-              countryCode={languageOptions.find(option => option.code === language)?.countryCode || ""}
+              countryCode={languageOptions.find((option) => option.code === language)?.countryCode || ""}
               svg
             />
-            <span>{languageOptions.find(option => option.code === language)?.name}</span>
+            <span>{languageOptions.find((option) => option.code === language)?.name}</span>
             <ChevronDown size={16} />
           </button>
           {isOpen && (
