@@ -85,7 +85,7 @@
       "sr": "Antički ribnjak nalazi se na delu ostrva koji se zove Nečujam, na dnu najmanje uvale. U 4.veku car Dioklecijan izabrao je tu uvalu kao svoj ribnjak. Zato je toj uvalici i dalje ime Piškera, a ruševine su još tu, na dnu mora. Priča se da je Dioklecijan tu imao i terme gde je dolazio na kupanje. Ovaj ribnjak je zaštićeno kulturno dobro.",
       "hr": "Na dijelu Šolte zvanom Nečujam, u dnu najmanjeg zaljeva, nalazi se drevni ribnjak. U 4. stoljeću carstvo Dioklecijan je ovu uvalu odabralo za svoj ribnjak. Zbog toga se ova uvala i danas zove Piškera, a ruševine su još uvijek tu, na dnu mora. Priča se da je carstvo ovdje imalo i terme, kamo se dolazio kupati. Ovaj ribnjak je zaštićeno kulturno dobro."
     },
-    "audioSrc": "diocletian_palace",
+    "audioSrc": "diocletian_pond",
     "iconColor": "orange",
     "iconType": "star"
   },
@@ -134,12 +134,12 @@
     "title": {
       "en": "Zaječar National Museum",
       "sr": "Narodni Muzej Zaječar",
-      "hr": ""
+      "hr": "Narodni muzej Zaječar"
     },
     "description": {
       "en": "It was founded in 1951. At the time of its establishment, the museum had ten objects from archaeology. Its full development began in 1953, when archaeological research began at the site of Felix Romuliana. Today, the collection of Felix Romiluiana contains about 3,000 items. What stands out are the part of the archivolt with the inscription Felix Romuliana, the head of the emperor Galerius and the hand with the globe, the head of Hercules, part of the white marble structure, the head of Jupiter, part of the white marble sculpture, the mosaic of Dionysus at the feast, and many other objects.",
       "sr": "Osnovan je 1951. godine. Prilikom osnivanja muzej je imao desetak predmeta iz arheologije. Puni razvoj dobija od 1953.godine kada počinju arheološka istraživanja na nalazištu Feliks Romulijani. Danas zbirka Feliks Romilujana sadrži oko 3000 predmeta. Ono što se izdvaja su deo arhivolte sa natpisom Felix Romuliana, glava imperatora Galerija i šaka sa globom, glava Herkula, deo strukture od belog mermera, glava Jupitera, deo skulpture od belog mermera, mozaik Dionis na gozbi, i mnogi drugi predmeti.",
-      "hr": "Viminacijum je arheološko nalazište u blizini Kostolca. Bio je to jedan od najvažnijih legijskih logora na Dunavu. Potječe iz 1. stoljeća nove ere. Nalazio se na rimskoj carigradskoj cesti. Potpuno je uništen dolaskom Slavena u 6. stoljeću. Danas se arheološko nalazište prostire na 450 hektara. Ima najveći broj neotkopanih grobova od svih rimskih arheoloških nalazišta. Prema podacima iz 2023. godine otkriveno je 16.000 grobova. Milijun godina star kostur mamuta otkriven je u lipnju 2009. godine. Visok preko 4 metra i težak 10 tona, jedan je od 20 do sada otkrivenih cjelovitih kostura mamuta. Dobila je ime Vika, a procjenjuje se da je imala 60 godina kada je umrla."
+      "hr": "Osnovan je 1951. godine. Prilikom osnivanja muzej je imao desetak predmeta iz arheologije. Puni razvoj dobiva od 1953.godine kada počinju arheološka istraživanja na nalazištu Feliks Romulijani. Danas zbirka Feliksa Romilujana sadrži oko 3000 predmeta. Ono što se izdvaja su dio arhivolte sa natpisom Felix Romuliana, glava imperatora Galerije i šaka sa globom, glava Herkula, dio strukture od belog mermera, glava Jupitera, dio skulpture od belog mermera, mozaik Dionis na gozbi, i mnogi drugi predmeti."
     },
     "audioSrc": "zajecar",
     "iconColor": "blue",
