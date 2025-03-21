@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 import { mapIcons, type MapIcon as MapIconType } from "../mapData"
 import { Play, Pause } from "lucide-react"
@@ -13,7 +13,7 @@ type MapSelectorProps = {
 
 export default function MapSelector({ country }: MapSelectorProps) {
     const [activeIcon, setActiveIcon] = useState<MapIconType | null>(null)
-    const audioRef = useState<HTMLAudioElement | null>(null)[0]
+    const audioRef = useRef<HTMLAudioElement | null>(null)
     const [isPlaying, setIsPlaying] = useState(false)
     const { language } = useLanguage()
 
@@ -23,18 +23,18 @@ export default function MapSelector({ country }: MapSelectorProps) {
     const handleIconClick = (icon: MapIconType) => {
         setActiveIcon(icon)
         setIsPlaying(false)
-        if (audioRef) {
-            audioRef.pause()
-            audioRef.currentTime = 0
+        if (audioRef.current) {
+            audioRef.current.pause()
+            audioRef.current.currentTime = 0
         }
     }
 
     const handleAudioToggle = () => {
-        if (audioRef) {
+        if (audioRef.current) {
             if (isPlaying) {
-                audioRef.pause()
+                audioRef.current.pause()
             } else {
-                audioRef.play()
+                audioRef.current.play()
             }
             setIsPlaying(!isPlaying)
         }

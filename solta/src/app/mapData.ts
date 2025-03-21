@@ -25,6 +25,7 @@ const mapIconsWithTailwindColors: MapIcon[] = mapIconsData.map((icon) => ({
   ...icon,
   iconColor: `bg-${icon.iconColor}-500 hover:bg-${icon.iconColor}-600`,
   iconType: icon.iconType as "star" | "house" | "number",
+  country: icon.country as "serbia" | "croatia",
 }))
 
 export const mapIcons: MapIcon[] = mapIconsWithTailwindColors
