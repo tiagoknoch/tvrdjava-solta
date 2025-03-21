@@ -18,6 +18,7 @@ export interface MapIcon {
   iconColor: string
   iconType: "star" | "house" | "number"
   iconContent?: string | number
+  country: "serbia" | "croatia"
 }
 
 const mapIconsWithTailwindColors: MapIcon[] = mapIconsData.map((icon) => ({
