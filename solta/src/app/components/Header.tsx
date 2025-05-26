@@ -18,9 +18,15 @@ export default function Header() {
   }
 
   const navItems = {
-    en: { home: "Home", about: "About Us", serbiaMap: "Serbia Map", croatiaMap: "Croatia Map" },
-    sr: { home: "Početna", about: "O nama", serbiaMap: "Mapa Srbije", croatiaMap: "Mapa Hrvatske" },
-    hr: { home: "Početna", about: "O nama", serbiaMap: "Karta Srbije", croatiaMap: "Karta Hrvatske" },
+    en: { home: "Home", quiz: "Quiz", about: "About Us", serbiaMap: "Serbia Map", croatiaMap: "Croatia Map" },
+    sr: { home: "Početna", quiz: "Kviz", about: "O nama", serbiaMap: "Mapa Srbije", croatiaMap: "Mapa Hrvatske" },
+    hr: { home: "Početna", quiz: "Kviz", about: "O nama", serbiaMap: "Karta Srbije", croatiaMap: "Karta Hrvatske" },
+  }
+
+  const quizUrls = {
+    en: "https://wordwall.net/resource/92698810",
+    sr: "https://wordwall.net/resource/92664396",
+    hr: "https://wordwall.net/resource/92698220",
   }
 
   const languageOptions = [
@@ -96,6 +102,14 @@ export default function Header() {
           <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].home}
           </Link>
+          <a
+            href={quizUrls[language]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            {navItems[language].quiz}
+          </a>
           <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].about}
           </Link>
@@ -104,11 +118,19 @@ export default function Header() {
 
       {/* Desktop Header */}
       <div className="hidden md:flex justify-between items-center">
-        {/* Left section: Home, About, Language */}
+        {/* Left section: Home, Quiz, About, Language */}
         <div className="flex items-center space-x-6">
           <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].home}
           </Link>
+          <a
+            href={quizUrls[language]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            {navItems[language].quiz}
+          </a>
           <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].about}
           </Link>
@@ -160,4 +182,3 @@ export default function Header() {
     </header>
   )
 }
-
