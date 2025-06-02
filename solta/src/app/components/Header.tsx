@@ -18,9 +18,30 @@ export default function Header() {
   }
 
   const navItems = {
-    en: { home: "Home", quiz: "Quiz", about: "About Us", serbiaMap: "Serbia Map", croatiaMap: "Croatia Map" },
-    sr: { home: "Početna", quiz: "Kviz", about: "O nama", serbiaMap: "Mapa Srbije", croatiaMap: "Mapa Hrvatske" },
-    hr: { home: "Početna", quiz: "Kviz", about: "O nama", serbiaMap: "Karta Srbije", croatiaMap: "Karta Hrvatske" },
+    en: {
+      home: "Home",
+      quiz: "Quiz",
+      handbook: "Handbook",
+      about: "About Us",
+      serbiaMap: "Serbia Map",
+      croatiaMap: "Croatia Map",
+    },
+    sr: {
+      home: "Početna",
+      quiz: "Kviz",
+      handbook: "Priručnik",
+      about: "O nama",
+      serbiaMap: "Mapa Srbije",
+      croatiaMap: "Mapa Hrvatske",
+    },
+    hr: {
+      home: "Početna",
+      quiz: "Kviz",
+      handbook: "Priručnik",
+      about: "O nama",
+      serbiaMap: "Karta Srbije",
+      croatiaMap: "Karta Hrvatske",
+    },
   }
 
   const quizUrls = {
@@ -110,6 +131,14 @@ export default function Header() {
           >
             {navItems[language].quiz}
           </a>
+          <a
+            href="/prezentac_mapiranje_arh_nal.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            {navItems[language].handbook}
+          </a>
           <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].about}
           </Link>
@@ -118,7 +147,7 @@ export default function Header() {
 
       {/* Desktop Header */}
       <div className="hidden md:flex justify-between items-center">
-        {/* Left section: Home, Quiz, About, Language */}
+        {/* Left section: Home, Quiz, Handbook, About, Language */}
         <div className="flex items-center space-x-6">
           <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].home}
@@ -130,6 +159,14 @@ export default function Header() {
             className="text-blue-600 hover:text-blue-800"
           >
             {navItems[language].quiz}
+          </a>
+          <a
+            href="/prezentac_mapiranje_arh_nal.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            {navItems[language].handbook}
           </a>
           <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].about}
