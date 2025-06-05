@@ -8,8 +8,10 @@ import { ChevronDown } from "lucide-react"
 
 export default function Header() {
   const { language, setLanguage } = useLanguage()
-  const [isOpen, setIsOpen] = useState(false)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false)
+  const [isQuizOpen, setIsQuizOpen] = useState(false)
+  const languageDropdownRef = useRef<HTMLDivElement>(null)
+  const quizDropdownRef = useRef<HTMLDivElement>(null)
 
   const titles = {
     en: "Paths of Ancient Civilizations",
@@ -44,10 +46,19 @@ export default function Header() {
     },
   }
 
-  const quizUrls = {
-    en: "https://wordwall.net/resource/92698810",
-    sr: "https://wordwall.net/resource/92664396",
-    hr: "https://wordwall.net/resource/92698220",
+  const quizOptions = {
+    en: [
+      { name: "Paths of Ancient Civilizations", url: "https://wordwall.net/resource/92698810" },
+      { name: "Mapping Quiz", url: "https://wordwall.net/resource/93214669" },
+    ],
+    sr: [
+      { name: "Putevima antičkih civilizacija", url: "https://wordwall.net/resource/92664396" },
+      { name: "Kviz o mapiranju", url: "https://wordwall.net/resource/93184475" },
+    ],
+    hr: [
+      { name: "Putevima antičkih civilizacija", url: "https://wordwall.net/resource/92698220" },
+      { name: "Kviz o mapiranju", url: "https://wordwall.net/resource/93215501" },
+    ],
   }
 
   const languageOptions = [
@@ -58,8 +69,11 @@ export default function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false)
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target as Node)) {
+        setIsLanguageOpen(false)
+      }
+      if (quizDropdownRef.current && !quizDropdownRef.current.contains(event.target as Node)) {
+        setIsQuizOpen(false)
       }
     }
 
@@ -71,7 +85,7 @@ export default function Header() {
 
   const handleLanguageChange = (lang: "sr" | "en" | "hr") => {
     setLanguage(lang)
-    setIsOpen(false)
+    setIsLanguageOpen(false)
   }
 
   return (
@@ -82,9 +96,9 @@ export default function Header() {
           <Link href={`/${language}`} className="hover:opacity-80">
             <h1 className="text-xl font-bold cursor-pointer">{titles[language]}</h1>
           </Link>
-          <div className="relative" ref={dropdownRef}>
+          <div className="relative" ref={languageDropdownRef}>
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
               className="flex items-center space-x-2 p-2 border rounded hover:bg-gray-100"
             >
               <ReactCountryFlag
@@ -94,7 +108,7 @@ export default function Header() {
               <span>{languageOptions.find((option) => option.code === language)?.name}</span>
               <ChevronDown size={16} />
             </button>
-            {isOpen && (
+            {isLanguageOpen && (
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
                 {languageOptions.map((option) => (
                   <button
@@ -123,16 +137,33 @@ export default function Header() {
           <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].home}
           </Link>
+          <div className="relative" ref={quizDropdownRef}>
+            <button
+              onClick={() => setIsQuizOpen(!isQuizOpen)}
+              className="flex items-center space-x-1 text-blue-600 hover:text-blue-800"
+            >
+              <span>{navItems[language].quiz}</span>
+              <ChevronDown size={14} />
+            </button>
+            {isQuizOpen && (
+              <div className="absolute left-0 mt-2 py-2 w-64 bg-white rounded-md shadow-xl z-20">
+                {quizOptions[language].map((quiz, index) => (
+                  <a
+                    key={index}
+                    href={quiz.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-left hover:bg-gray-100"
+                    onClick={() => setIsQuizOpen(false)}
+                  >
+                    {quiz.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <a
-            href={quizUrls[language]}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800"
-          >
-            {navItems[language].quiz}
-          </a>
-          <a
-            href="/prezentac_mapiranje_arh_nal.pdf"
+            href="/Prezentac mapiranje_arh_nal.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
@@ -152,16 +183,33 @@ export default function Header() {
           <Link href={`/${language}`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].home}
           </Link>
+          <div className="relative" ref={quizDropdownRef}>
+            <button
+              onClick={() => setIsQuizOpen(!isQuizOpen)}
+              className="flex items-center space-x-1 text-blue-600 hover:text-blue-800"
+            >
+              <span>{navItems[language].quiz}</span>
+              <ChevronDown size={14} />
+            </button>
+            {isQuizOpen && (
+              <div className="absolute left-0 mt-2 py-2 w-64 bg-white rounded-md shadow-xl z-20">
+                {quizOptions[language].map((quiz, index) => (
+                  <a
+                    key={index}
+                    href={quiz.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-left hover:bg-gray-100"
+                    onClick={() => setIsQuizOpen(false)}
+                  >
+                    {quiz.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <a
-            href={quizUrls[language]}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800"
-          >
-            {navItems[language].quiz}
-          </a>
-          <a
-            href="/prezentac_mapiranje_arh_nal.pdf"
+            href="/Prezentac mapiranje_arh_nal.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
@@ -171,9 +219,9 @@ export default function Header() {
           <Link href={`/${language}/about`} className="text-blue-600 hover:text-blue-800">
             {navItems[language].about}
           </Link>
-          <div className="relative" ref={dropdownRef}>
+          <div className="relative" ref={languageDropdownRef}>
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsLanguageOpen(!isLanguageOpen)}
               className="flex items-center space-x-2 p-2 border rounded hover:bg-gray-100"
             >
               <ReactCountryFlag
@@ -183,7 +231,7 @@ export default function Header() {
               <span>{languageOptions.find((option) => option.code === language)?.name}</span>
               <ChevronDown size={16} />
             </button>
-            {isOpen && (
+            {isLanguageOpen && (
               <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
                 {languageOptions.map((option) => (
                   <button
