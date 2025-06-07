@@ -163,7 +163,7 @@ export default function Header() {
             )}
           </div>
           <a
-            href="/Prezentac mapiranje_arh_nal.pdf"
+            href={`/mapping.${language}.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
@@ -209,7 +209,7 @@ export default function Header() {
             )}
           </div>
           <a
-            href="/Prezentac mapiranje_arh_nal.pdf"
+            href={`/mapping.${language}.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800"
